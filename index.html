@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Sonya's Weather App</title>
+  </head>
+  
+  <div class="container">
+  <body>
+   <div class="outer-box-frame" style="padding: 20px;">
+    <div class="main-body">
+      
+        <div class="card-body">        
+          <form>
+            <div class="form-row">
+              <div class="col">
+                <div class="input-group">
+                  <input
+                  type="text"
+                  class="form-control"
+                  id="city-input"
+                  autofocus="on"
+                  autocomplete="off"
+                  style="width: 40%;"/>
+                  <span class="input-group-btn">
+                    <button 
+                    type="submit" 
+                    class="btn btn-outline-primary"
+                    id="search-button">Search
+                    </button>
+                    <button 
+                    type="button" 
+                    class="btn btn-outline-primary"
+                    id="current-button">Current
+                    </button> 
+                  </span>  
+                </div>
+               </div>
+               </div>       
+       </div>         
+     </div>  
+       
+<br/>
+          </form>
+
+             <div class="row justify-content-center" style="text-align: center;">
+              <div class="col-sm-6">
+                <div class="currentDay" id="todays-day"> Day
+                </div> 
+                <div class="currentDate" id="todays-date"> Date
+                </div>
+                <div class="currentTime" id="todays-time"> Time
+                </div>
+              </div>
+              </div>
+          <br/>
+
+          <div class="row justify-content-center" style="text-align: center;">
+            <div class="col-4">
+              <span class="city-name" id="city"></span>
+              <br/>
+              <span class="description-01" id="desc-01" style="text-transform: capitalize"></span>
+            </div>
+            <div class="col-4">
+              <img
+                  src="images/static/cloudy-day-1.svg"
+                  alt="cloudy"
+                  width="170"
+                  height="150"
+                  id="curr-img"
+                  />
+            </div>
+            <div class="col-4">
+              <div class="currentTemp" id="todays-temp"></div>
+              <div class="todaysHumidity" id="humid-01"></div>
+              <div class="todaysWind" id="wind-01"></div>
+            </div> 
+          </div>   
+          
+            
+                 
+            <div class="row justify-content-center" >
+            <div class="row">
+            <div class="col-2">Mon</div>
+            <div class="col-2">Tue</div>
+            <div class="col-2">Wed</div>
+            <div class="col-2">Thur</div>
+            <div class="col-2">Fri</div>
+            <div class="col-2">Sat</div>
+            </div>  
+
+            <div class="row">
+              <div class="col-2">
+                <img src="images/rainy-6.svg" alt="heavyRain">
+              </div>
+
+              <div class="col-2">
+                <img src="images//day.svg" alt="heavyRain" />                    
+              </div>
+
+              <div class="col-2">
+                <img src="images/cloudy-day-3.svg" alt="heavyRain" />
+              </div>
+
+              <div class="col-2">
+                <img src="images/rainy-1.svg" alt="heavyRain" />
+              </div>
+
+              <div class="col-2">
+                <img src="images/day.svg" alt="heavyRain" />
+              </div>
+
+              <div class="col-2">
+                <img src="images/cloudy-day-2.svg" alt="heavyRain" />
+              </div>
+               
+              <div class="col-2">10°C</div>
+              <div class="col-2">10°C</div>
+              <div class="col-2">10°C</div>
+              <div class="col-2">10°C</div>
+              <div class="col-2">10°C</div>
+              <div class="col-2">10°C</div>
+              
+            </div>
+          </div>
+         
+      </div>  
+<div class="source-code">
+  <a href="https://github.com/50ny4/Weather-App-Project">Open Source Code! </a> by Sonya Parmar
+</div>   
+
+
+<script src="src/script.js"></script>
+
+</body>
+  
